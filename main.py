@@ -28,8 +28,14 @@ operations = {
     "/" : divide,
     "*" : multiply
 }
-
-numb1 = float(input("what's the first number? :"))
-numb2 = float(input("what's the second number? :"))
+continue_calulating False
+while not continue_calculating:
+numb1 = float(input("what's the first number?: "))
 for operator in operations:
     print(operator)
+operation_symbol = input("pick an operation from the line above: ")
+numb2 = float(input("what's the second number?: "))
+
+calculation_function = operations[operation_symbol]
+answer = calculation_function(numb1, numb2)
+print(f"{numb1} {operation_symbol} {numb2} = {answer}")
