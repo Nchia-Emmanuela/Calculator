@@ -22,7 +22,7 @@ def divide(n1, n2):
 def multiply(n1, n2):
     return n1 * n2
 # dictionary to be able to access each operation
-operatioons = {
+operations = {
     "+" : add,
     "-" : subtract,
     "/" : divide,
@@ -31,3 +31,5 @@ operatioons = {
 
 numb1 = float(input("what's the first number? :"))
 numb2 = float(input("what's the second number? :"))
+for operator in operations:
+    print(operator)
