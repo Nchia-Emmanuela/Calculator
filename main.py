@@ -14,17 +14,21 @@ def divide(n1, n2):
 # multiplication
 def multiply(n1, n2):
     return n1 * n2
+def exponent(n1, n2):
+    return n1**n2
 # dictionary to be able to access each operation
 operations = {
     "+" : add,
     "-" : subtract,
     "/" : divide,
-    "*" : multiply
+    "*" : multiply,
+    "^" : exponent
 }
 
 # this calculator function is a recursive function that calls it self 
 # it takes no input and has no output.
 def calculator():
+    print(logo)
     numb1 = float(input("what's the first number?: "))
     for operator in operations:
         print(operator)
